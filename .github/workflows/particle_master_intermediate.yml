@@ -5,6 +5,7 @@ name: SolarTherm Particle-Master Intermediate Branch
 
 on:
   workflow_dispatch:
+  push:
 
 jobs:
   build:
