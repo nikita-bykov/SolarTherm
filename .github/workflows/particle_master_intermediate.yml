@@ -5,12 +5,6 @@ name: SolarTherm Particle-Master Intermediate Branch
 
 on:
   workflow_dispatch:
-    #
-  push:
-    branches: [ $default-branch, particle-master-intermediate]
-  pull_request:
-    branches:  [ $default-branch, particle-master-intermediate]
-    #[ $default-branch, master-m ]
 
 jobs:
   build:
