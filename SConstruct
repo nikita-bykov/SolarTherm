@@ -355,7 +355,7 @@ env = conf.Finish()
 #---------------------------------------------------------------------------------------------------
 
 # some tricks required for Ubuntu 18.04...
-configcmd = 'pkg-config python-$PYVERSION-embed --libs --cflags'
+configcmd = 'pkg-config python-$PYVERSION --libs --cflags'
 if platform.system()=="Linux":
 	import distro
 	if distro.id() == 'ubuntu' and distro.version() == '18.04':
