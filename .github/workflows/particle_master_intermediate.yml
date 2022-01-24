@@ -134,7 +134,7 @@ jobs:
         export PATH=$PATH:/usr/local/bin:~/.local/bin
         export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
         export PYTHONPATH=$PYTHONPATH:/opt/hostedtoolcache/Python
-        export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:$pythonLocation/lib/pkgconfig
+        export PKG_CONFIG_PATH=$pythonLocation/lib/pkgconfig
         echo $PKG_CONFIG_PATH
         scons SSC_PREFIX=/opt/SAM/${SAMVER//-/.}
 
