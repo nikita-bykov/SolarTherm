@@ -135,7 +135,7 @@ jobs:
         export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
         export PYTHONPATH=$PYTHONPATH:/opt/hostedtoolcache/Python
         export PKG_CONFIG_PATH=$pythonLocation/lib/pkgconfig
-        echo $PKG_CONFIG_PATH
+        ls $PKG_CONFIG_PATH
         scons SSC_PREFIX=/opt/SAM/${SAMVER//-/.}
 
     - name: Install SolarTherm
